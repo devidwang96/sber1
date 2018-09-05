@@ -8,13 +8,21 @@
                     <div class="hidden-xs col-sm-3">
                         <div class="row title-left">
                             <div class="col-xs-8 text">
-                                <p>Премиальные карты</p>
+                                <p>{{ cards[0].slug }}</p>
                             </div>
                             <div class="col-xs-4 image">
                                 <img src="/images/icon_07.png" alt="">
                             </div>
                         </div>
+
+                        <div class="cards">
+                            <div class="card" v-for="(card, index) in cards">
+                                <p :id="'slide_' + index">{{ card.slug }}</p>
+                            </div>
+                        </div>
+
                     </div>
+
                     <div class="col-xs-12 col-sm-9">
                         <div class="right-block">
                             <div class="title_line">Платежные карточки подобно дорогостоящим аксессуарам являются атрибутом, подчеркивающим Ваш статус.</div>
@@ -76,3 +84,26 @@
 
     </div>
 </template>
+
+
+<script>
+    import axios from 'axios';
+
+    export default {
+        data(){
+            return {
+                cards: null,
+            }
+        },
+        mounted(){
+            axios.get('/backend/test')
+                .then((response) => {
+                    this.cards = response.data;
+                    console.log(this.cards);
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        }
+    }
+</script>

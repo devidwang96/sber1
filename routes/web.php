@@ -19,3 +19,6 @@ Route::get('/cards', 'MainController@index');
 Route::get('/insides', 'MainController@index');
 Route::get('/suggestions', 'MainController@index');
 Route::get('/service', 'MainController@index');
+
+
+Route::get('/backend/test', 'TestController@index');
