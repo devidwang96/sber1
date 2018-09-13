@@ -41,20 +41,27 @@
                                             <span></span>
                                         </button>
                                     </div>
-                                    <div class="header__link animate fade-right hidden-sm" data-index="0" data-duration="500"
-                                         data-delay="500"><a href="#scroll-01" class="btn-scroll">Персональный менеджер</a></div>
+                                    <div class="header__logo animate fade-right" data-index="0" data-duration="500" data-delay="500">
+                                        <a href="/"><img src="/images/logo.png" alt=""></a>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="col-xs-6 col-sm-4">
-                                <div class="header__logo animate fade-down" data-index="0" data-duration="500" data-delay="500">
-                                    <a href="/"><img src="/images/logo.png" alt=""></a></div>
+                                <div class="center-block">
+                                    <div class="header__logo animate fade-right" data-index="0" data-duration="500" data-delay="500">
+                                        <a href="/"><img src="/images/logo.png" alt=""></a>
+                                    </div>
+                                    <div class="header__link animate fade-down hidden-sm" data-index="0" data-duration="500" data-delay="500"><a href="#scroll-01" class="btn-scroll">Стать VIP-клиентом</a></div>
+                                </div>
                             </div>
+
                             <div class="col-xs-3 col-sm-4">
                                 <div class="right-block">
                                     <div class="header__search animate fade-left" data-index="0" data-duration="500"
                                          data-delay="500">
                                         <form>
-                                            <input type="text" name="search" id="search" placeholder="Search..">
+                                            <input type="text" name="search" id="search" placeholder="Поиск">
                                             <i>
                                                 <label for="search">
                                                     <img src="images/search-icon.png" alt="">
@@ -65,6 +72,7 @@
                                     <div class="header__lang">EN</div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <div class="header__bottom">
@@ -136,7 +144,7 @@
                             <div class="col-xs-12 col-sm-5">
                                 <div class="row adv-el">
                                     <div class="col-xs-3">
-                                        <div class="image"><img src="/images/adv_icon_01.png" alt=""></div>
+                                        <div class="image"><img src="/images/preium_icon_01.png" alt=""></div>
                                     </div>
                                     <div class="col-xs-9">
                                         <div class="title">Индивидуальные финансовые и страховые услуги</div>
@@ -148,7 +156,7 @@
                                 <div class="row adv-el animate fade-bottomleft" data-index="2" data-duration="500"
                                      data-delay="700">
                                     <div class="col-xs-3">
-                                        <div class="image"><img src="/images/adv_icon_02.png" alt=""></div>
+                                        <div class="image"><img src="/images/preium_icon_02.png" alt=""></div>
                                     </div>
                                     <div class="col-xs-9">
                                         <div class="title">Безопасность и конфиденциальность</div>
@@ -161,7 +169,7 @@
                             <div class="col-xs-12 col-sm-7">
                                 <div class="row adv-el adv-el-red" data-index="2" data-duration="500" data-delay="700">
                                     <div class="col-xs-3">
-                                        <div class="image"><img src="/images/adv_icon_03.png" alt=""></div>
+                                        <div class="image"><img src="/images/preium_icon_03.png" alt=""></div>
                                     </div>
 
                                     <div class="col-xs-9">
@@ -190,88 +198,171 @@
                         </div>
                         <div class="slider-block">
                             <div class="swiper-container swiper-products">
-                                <!--<div class="suptitle-text animate fade-up" data-index="3" data-duration="500" data-delay="500">-->
-                                <!--В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:-->
-                                <!--</div>-->
+                                <div class="suptitle-text animate fade-up" data-index="3" data-duration="500" data-delay="500">
+                                    <div class="wrap">
+                                        <span>В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:</span>
+                                    </div>
+                                </div>
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide animate fade-up" data-index="3" data-duration="600" data-delay="700">
+                                    <div class="swiper-slide">
                                         <div class="wrap">
                                             <div class="slide-inner">
-                                                <div class="suptitle"><span>В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:</span></div>
-                                                <div class="image"><img src="/images/prod_img_01.jpg" alt=""></div>
+                                                <div class="suptitle"></div>
+                                                <div class="image" style="background: url('/images/image_full_maps.jpg')"></div>
                                                 <div class="title">Карты</div>
                                                 <div class="subtitle">Премиальные карты</div>
                                                 <div class="description">Платежные карточки подобно дорогостоящим аксессуарам
                                                     являются атрибутом, подчеркивающим Ваш статус.
                                                 </div>
-                                                <a href="#" class="btn-white">Подробнее</a>
+                                                <a href="/cards.html" class="btn-white">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide animate fade" data-index="3" data-duration="600" data-delay="700">
+                                    <div class="swiper-slide">
                                         <div class="wrap">
                                             <div class="slide-inner">
-                                                <div class="suptitle"><span>В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:</span></div>
-                                                <div class="image"><img src="/images/prod_img_02.jpg" alt=""></div>
+                                                <div class="suptitle"></div>
+                                                <div class="image" style="background: url('/images/image_background-servis.jpg')"></div>
                                                 <div class="title">Вложения</div>
                                                 <div class="subtitle">Премиальные вклады</div>
                                                 <div class="description">Сбербанк Первый предлагает линейку премиальных вкладов,
                                                     главными преимуществами которых являются высокая надежность и гибкость условий.
                                                 </div>
-                                                <a href="#" class="btn-white">Подробнее</a>
+                                                <a href="/vlozheniya.html" class="btn-white">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide animate fade-down" data-index="3" data-duration="600" data-delay="700">
+                                    <div class="swiper-slide">
                                         <div class="wrap">
                                             <div class="slide-inner">
-                                                <div class="suptitle"><span>В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:</span></div>
-                                                <div class="image"><img src="/images/prod_img_03.jpg" alt=""></div>
+                                                <div class="suptitle"></div>
+                                                <div class="image" style="background: url('/images/image_full_credit.jpg')"></div>
                                                 <div class="title">Финансирование</div>
                                                 <div class="subtitle">Кредитные продукты</div>
                                                 <div class="description">Доверие и понимание Ваших потребностей – наши главные
                                                     приоритеты. Кредит – это возможность выгодно и быстро реализовать важные планы.
                                                 </div>
-                                                <a href="#" class="btn-white">Подробнее</a>
+                                                <a href="/credit-products.html" class="btn-white">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="wrap">
+                                            <div class="slide-inner">
+                                                <div class="suptitle"></div>
+                                                <div class="image" style="background: url('/images/image_background-servis.jpg')"></div>
+                                                <div class="title">Сейфовые ячейки</div>
+                                                <div class="subtitle">Индивидуальные банковские сейфы</div>
+                                                <div class="description">Услуга, доступная только клиентам Сбербанк Первый!
+                                                    Сбербанк Первый предоставляет сервис хранения ценностей с высокой степенью защиты.
+                                                </div>
+                                                <a href="/vlozheniya.html" class="btn-white">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="arrow-block">
-                                    <div class="swiper-button-prev animate fade-right" data-duration="600" data-delay="500"
-                                         data-index="3"></div>
-                                    <div class="swiper-button-next animate fade-left" data-duration="600" data-delay="500"
-                                         data-index="3"></div>
-                                </div>
+                            </div>
+                            <div class="arrow-block">
+                                <div class="swiper-button-prev animate fade-right" data-duration="600" data-delay="500" data-index="3"></div>
+                                <div class="swiper-button-next animate fade-left" data-duration="600" data-delay="500" data-index="3"></div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="partners">
                     <div class="wrapper">
-                        <div class="swiper-container swiper-partners">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="image animate fade" data-duration="500" data-index="3" data-delay="500">
-                                        <img src="/images/icon_rixos.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image animate fade" data-duration="500" data-index="3" data-delay="600">
-                                        <img src="/images/icon_mont_blank.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image animate fade" data-duration="500" data-index="3" data-delay="700">
-                                        <img src="/images/icon_luxor.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="image animate fade" data-duration="500" data-index="3" data-delay="800">
-                                        <img src="/images/icon_dunhill.jpg" alt="">
-                                    </div>
-                                </div>
+                        <div id="partnersLink"></div>
+                        <h2 class="animate fade" data-index="3" data-duration="500" data-delay="700">Клуб привилегий</h2>
+                        <div class="line-red animate short-fade-up" data-index="3" data-duration="500" data-delay="500"></div>
+                        <div class="wrap-block">
+                            <div class="swiper-container swiper-partners">
+                                <div class="swiper-wrapper">
 
+                                    <div class="swiper-slide">
+                                        <div class="container-wrap">
+                                            <div class="card">
+                                                <div class="face front">
+                                                    <div class="wrap">
+                                                        <div class="image">
+                                                            <img src="/images/icon_rixos.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="face back">
+                                                    <div class="wrap">
+                                                        <div class="description">
+                                                            <h4>Rixos</h4>
+                                                            <p>В самом сердце Алматы – крупнейшего города Казахстана – будучи в центре городской жизни и бок о бок с историческими достопримечательностями, испытайте незабываемый уровень сервиса Rixos.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-wrap">
+                                            <div class="card">
+                                                <div class="face front">
+                                                    <div class="wrap">
+                                                        <div class="image">
+                                                            <img src="/images/icon_mont_blank.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="face back">
+                                                    <div class="wrap">
+                                                        <div class="description">
+                                                            <h4>MONTBLANC</h4>
+                                                            <p>Традиции, мастерство, элегантность и качество. Бренд элитных бизнес аксессуаров Montblanc предлагает потратить время с пользой и приобрести уникальные сувениры.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-wrap">
+                                            <div class="card">
+                                                <div class="face front">
+                                                    <div class="wrap">
+                                                        <div class="image">
+                                                            <img src="/images/icon_luxor.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="face back">
+                                                    <div class="wrap">
+                                                        <div class="description">
+                                                            <h4>Wellness Club LUXOR</h4>
+                                                            <p>Единственный в Центральной Азии Wellness Club премиум-класса, предлагающий своим клиентам весь спектр спортивно-оздоровительных, эстетических, косметологических и ряд медицинских услуг. Расположенный в красивейшем, экологически чистом районе г. Алматы.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="container-wrap">
+                                            <div class="card">
+                                                <div class="face front">
+                                                    <div class="wrap">
+                                                        <div class="image">
+                                                            <img src="/images/icon_dunhill.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="face back">
+                                                    <div class="wrap">
+                                                        <div class="description">
+                                                            <h4>Dunhill</h4>
+                                                            <p>Английская компания, специализирующаяся на производстве мужских товаров: ювелирные аксессуары, одежда, кожаные изделия, пишущие принадлежности, зажигалки, парфюмерные изделия и часы</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -289,9 +380,9 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 animate fade-left" data-index="4" data-duration="500" data-delay="700">
                             <div class="desc-block">
-                                <p>Банк, работой в котором можно гордиться, который уважают, сотрудники которого уверены в своем
-                                    будущем</p>
-                                <a href="#" class="btn-more">Просмотреть всех</a>
+                                <!--<p>Банк, работой в котором можно гордиться, который уважают, сотрудники которого уверены в своем-->
+                                <!--будущем</p>-->
+                                <a href="/team.html" class="btn-more">Просмотреть всех</a>
                             </div>
                         </div>
                     </div>
@@ -440,21 +531,21 @@
                                                 <div class="col-xs-10">
                                                     <div class="text">
                                                         г. Алматы:<br>
-                                                        Казахстан, Алматы, пр.Достык, д. 97.<br>
-                                                        Телефоны: +7 (727) 259 77 87, +7 (727) 259 77 97г. Астана:<br>
-                                                        <br><br>
-                                                        Казахстан, Астана, пр. Туран 37/9, ЖК «RixosKhanShatyrResidences», Блок Б<br>
-                                                        Телефоны: +7 (7172) 43 35 74, +7 (7172) 43 35 75, +7 (7172) 43 35 76
+                                                        пр.Достык, д. 97.<br>
+                                                        <br>
+                                                        г. Астана: <br>
+                                                        пр. Туран 37/9, ЖК «RixosKhanShatyrResidences», Блок Б<br>
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cont-el col-xs-12 col-sm-6">
+                                        <div class="cont-el col-xs-12 col-sm-12">
                                             <div class="row">
                                                 <div class="image col-xs-2"><img src="/images/contacts_icon02.png" alt=""></div>
                                                 <div class="col-xs-10">
                                                     <div class="text">
-                                                        по телефонам:<br><br>
+                                                        Телефоны:<br><br>
                                                         г. Алматы<br>
                                                         +7 (727) 259 77 87<br>
                                                         +7 (727) 259 77 97<br><br>
@@ -466,7 +557,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cont-el col-xs-12 col-sm-6">
+                                        <div class="cont-el col-xs-12 col-sm-12">
                                             <div class="row">
                                                 <div class="image col-xs-2"><img src="/images/contacts_icon03.png" alt=""></div>
                                                 <div class="col-xs-10"><div class="text">VIP@SBERBANK.KZ</div>
@@ -483,6 +574,8 @@
                 </div>
             </section>
         </div>
+
+
         <ul class="pagination-scrollify">
             <li class="animate fade-left" data-index="all" data-duration="500" data-delay="500"><a class="active" href="#section-header"><span class="number">01</span></a></li>
             <li class="animate fade-left" data-index="all" data-duration="500" data-delay="600"><a class="" href="#section-about"><span class="number">02</span></a></li>
@@ -508,23 +601,13 @@
 
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <div class="maps-title">
-                                        г. Алматы: <br>
-                                        Казахстан, Алматы, пр.Достык, д. 97.<br>
-                                        Телефоны: +7 (727) 259 77 87, +7 (727) 259 77 97г. Астана:
-                                    </div>
                                     <div class="maps-block">
-                                        <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab8de1a2de199e8acf28d97b710ee4c73a7873474f79612ff782ad88d77c8a200&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>-->
+                                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab8de1a2de199e8acf28d97b710ee4c73a7873474f79612ff782ad88d77c8a200&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="maps-title">
-                                        г. Астана: <br>
-                                        Казахстан, Астана, пр. Туран 37/9, ЖК «RixosKhanShatyrResidences», Блок Б<br>
-                                        Телефоны: +7 (7172) 43 35 74, +7 (7172) 43 35 75, +7 (7172) 43 35 76
-                                    </div>
                                     <div class="maps-block">
-                                        <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e2ec8efc81dd0a28e7d5a20dde2df2d898a78c46d6b0fd5a48bb67f1d346708&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>-->
+                                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e2ec8efc81dd0a28e7d5a20dde2df2d898a78c46d6b0fd5a48bb67f1d346708&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                                     </div>
                                 </div>
                             </div>
@@ -599,12 +682,14 @@
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     },
-                    // autoplay: {
-                    //     delay: 5000,
-                    // },
+                    autoplay: {
+                        delay: 5000,
+                    },
                     effect: 'fade',
                     speed: 1000,
                 });
+
+
 
                 //swiper slider 02
                 var swiper = new Swiper('.swiper-products', {
@@ -614,6 +699,9 @@
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     },
+                    // autoplay: {
+                    //     delay: 5000,
+                    // },
                     loop: true,
                     speed: 1000,
                     breakpoints: {
@@ -631,22 +719,30 @@
                     }
                 });
 
+
+
                 var swiper = new Swiper('.swiper-partners', {
                     slidesPerView: 4,
-                    spaceBetween: 30,
+                    spaceBetween: 0,
                     loop: true,
                     breakpoints: {
-                        320: {
+                        768: {
                             slidesPerView: 1,
                         },
-                        768: {
-                            slidesPerView: 2,
-                        },
+                        // 768: {
+                        //     slidesPerView: 2,
+                        // },
                         1200: {
                             slidesPerView: 3,
                         }
-                    }
+                    },
+                    // autoplay: {
+                    //     delay: 5000,
+                    // },
                 });
+
+
+
 
                 var swiper = new Swiper('.swiper-team', {
                     slidesPerView: 4,
@@ -657,17 +753,44 @@
                     },
                     loop: true,
                     breakpoints: {
-                        320: {
+                        768: {
                             slidesPerView: 1,
                         },
-                        768: {
-                            slidesPerView: 2,
-                        },
+                        // 768: {
+                        //     slidesPerView: 2,
+                        // },
                         1200: {
                             slidesPerView: 3,
                         }
-                    }
+                    },
+                    autoplay: {
+                        delay: 5000,
+                    },
                 });
+
+
+
+
+                var swiper = new Swiper('.swiper-city', {
+
+                    direction: 'vertical',
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+
+                        renderBullet: function (index, className) {
+                            return '<span class="' + className + '">' + (index + 1) + '</span>';
+                        }
+                    },
+                    loop: true,
+                    effect: 'fade',
+                    speed: 1000,
+                    autoplay: {
+                        delay: 5000,
+                    },
+
+                });
+
 
                 $(".btn-scroll").off('click');
                 $(".btn-scroll").on('click', function() {

@@ -21,6 +21,7 @@
                                     Карты
                                 </router-link>
 
+
                                 <router-link :to="Laravel.getLocalizedRoute({name : 'credits'})">
                                     Кредитные продукты
                                 </router-link>
@@ -31,26 +32,40 @@
 
                             </nav>
                             <button id="showLeft" class="menu-button" @click="state.menu.state = !state.menu.state">
-
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </button>
                         </div>
-                        <div class="header__link"><a href="#">Персональный менеджер</a></div>
+                        <div class="header__logo animate fade-right" data-index="0" data-duration="500" data-delay="500">
+                            <a href="/"><img src="/images/logo.png" alt=""></a>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
 
-                        <div class="header__logo">
-                            <router-link :to="Laravel.getLocalizedRoute({name : 'home'})">
-                                <img src="/images/logo.png" alt="">
-                            </router-link>
+                    <div class="col-xs-4 col-sm-4">
+                        <div class="center-block">
+                            <div class="header__logo animate fade-right" data-index="0" data-duration="500" data-delay="500">
+                                <a href="/"><img src="/images/logo.png" alt=""></a>
+                            </div>
+                            <div class="header__link animate fade-down hidden-sm" data-index="0" data-duration="500" data-delay="500"><button type="button" data-toggle="modal" data-target="#modalForm">Стать VIP-клиентом</button></div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4 right-row">
-                        <div class="header__search">
-                            <form>
-                                <input type="text" name="search" placeholder="Search..">
-                            </form>
+
+                    <div class="col-xs-4 col-sm-4">
+                        <div class="right-block">
+                            <div class="header__search animate fade-left" data-index="0" data-duration="500"
+                                 data-delay="500">
+                                <form>
+                                    <input type="text" name="search" id="search" placeholder="Поиск">
+                                    <i>
+                                        <label for="search">
+                                            <img src="images/search-icon_black.png" alt="">
+                                        </label>
+                                    </i>
+                                </form>
+                            </div>
+                            <div class="header__lang">EN</div>
                         </div>
-                        <div class="header__lang">EN</div>
                     </div>
                 </div>
             </div>

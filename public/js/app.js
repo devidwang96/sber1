@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -70,7 +70,7 @@
 "use strict";
 
 
-var bind = __webpack_require__(8);
+var bind = __webpack_require__(7);
 var isBuffer = __webpack_require__(25);
 
 /*global toString:true*/
@@ -10904,10 +10904,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(10);
+    adapter = __webpack_require__(9);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(10);
+    adapter = __webpack_require__(9);
   }
   return adapter;
 }
@@ -10982,7 +10982,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
 /* 5 */
@@ -11931,34 +11931,6 @@ var index_esm = {
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports) {
-
-module.exports = function(module) {
-	if(!module.webpackPolyfill) {
-		module.deprecate = function() {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if(!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-
-/***/ }),
-/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14499,7 +14471,7 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14517,7 +14489,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -14707,7 +14679,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14718,7 +14690,7 @@ var settle = __webpack_require__(28);
 var buildURL = __webpack_require__(30);
 var parseHeaders = __webpack_require__(31);
 var isURLSameOrigin = __webpack_require__(32);
-var createError = __webpack_require__(11);
+var createError = __webpack_require__(10);
 var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(33);
 
 module.exports = function xhrAdapter(config) {
@@ -14894,7 +14866,7 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14919,7 +14891,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14931,7 +14903,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14957,7 +14929,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25923,7 +25895,7 @@ module.exports = Vue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(42).setImmediate))
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28553,7 +28525,7 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28636,25 +28608,25 @@ var win = (typeof window === 'undefined') ? {
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(18);
-module.exports = __webpack_require__(83);
+__webpack_require__(17);
+module.exports = __webpack_require__(80);
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__(79);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 /**
@@ -28663,7 +28635,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(19);
+__webpack_require__(18);
 
 
 
@@ -28699,12 +28671,12 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 });
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-window._ = __webpack_require__(20);
-window.Popper = __webpack_require__(7).default;
+window._ = __webpack_require__(19);
+window.Popper = __webpack_require__(6).default;
 
 __webpack_require__(21);
 
@@ -28762,7 +28734,7 @@ if (token) {
 // });
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -45872,7 +45844,35 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(6)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(20)(module)))
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if(!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if(!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
 
 /***/ }),
 /* 21 */
@@ -46734,7 +46734,7 @@ if touchScroll is false - update index
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-   true ? factory(exports, __webpack_require__(3), __webpack_require__(7)) :
+   true ? factory(exports, __webpack_require__(3), __webpack_require__(6)) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
   (factory((global.bootstrap = {}),global.jQuery,global.Popper));
 }(this, (function (exports,$,Popper) { 'use strict';
@@ -50688,7 +50688,7 @@ module.exports = __webpack_require__(24);
 
 
 var utils = __webpack_require__(0);
-var bind = __webpack_require__(8);
+var bind = __webpack_require__(7);
 var Axios = __webpack_require__(26);
 var defaults = __webpack_require__(4);
 
@@ -50723,9 +50723,9 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(13);
+axios.Cancel = __webpack_require__(12);
 axios.CancelToken = __webpack_require__(40);
-axios.isCancel = __webpack_require__(12);
+axios.isCancel = __webpack_require__(11);
 
 // Expose all/spread
 axios.all = function all(promises) {
@@ -50878,7 +50878,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 "use strict";
 
 
-var createError = __webpack_require__(11);
+var createError = __webpack_require__(10);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -51311,7 +51311,7 @@ module.exports = InterceptorManager;
 
 var utils = __webpack_require__(0);
 var transformData = __webpack_require__(37);
-var isCancel = __webpack_require__(12);
+var isCancel = __webpack_require__(11);
 var defaults = __webpack_require__(4);
 var isAbsoluteURL = __webpack_require__(38);
 var combineURLs = __webpack_require__(39);
@@ -51471,7 +51471,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 "use strict";
 
 
-var Cancel = __webpack_require__(13);
+var Cancel = __webpack_require__(12);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -51823,7 +51823,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(9)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(8)))
 
 /***/ }),
 /* 44 */
@@ -52059,40 +52059,27 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c("button", {
-                staticClass: "menu-button",
-                attrs: { id: "showLeft" },
-                on: {
-                  click: function($event) {
-                    _vm.state.menu.state = !_vm.state.menu.state
+              _c(
+                "button",
+                {
+                  staticClass: "menu-button",
+                  attrs: { id: "showLeft" },
+                  on: {
+                    click: function($event) {
+                      _vm.state.menu.state = !_vm.state.menu.state
+                    }
                   }
-                }
-              })
+                },
+                [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
+              )
             ]),
             _vm._v(" "),
             _vm._m(0)
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-xs-12 col-sm-4" }, [
-            _c(
-              "div",
-              { staticClass: "header__logo" },
-              [
-                _c(
-                  "router-link",
-                  {
-                    attrs: {
-                      to: _vm.Laravel.getLocalizedRoute({ name: "home" })
-                    }
-                  },
-                  [_c("img", { attrs: { src: "/images/logo.png", alt: "" } })]
-                )
-              ],
-              1
-            )
-          ]),
+          _vm._m(1),
           _vm._v(" "),
-          _vm._m(1)
+          _vm._m(2)
         ])
       ])
     ])
@@ -52103,24 +52090,113 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header__link" }, [
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Персональный менеджер")])
+    return _c(
+      "div",
+      {
+        staticClass: "header__logo animate fade-right",
+        attrs: {
+          "data-index": "0",
+          "data-duration": "500",
+          "data-delay": "500"
+        }
+      },
+      [
+        _c("a", { attrs: { href: "/" } }, [
+          _c("img", { attrs: { src: "/images/logo.png", alt: "" } })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-xs-4 col-sm-4" }, [
+      _c("div", { staticClass: "center-block" }, [
+        _c(
+          "div",
+          {
+            staticClass: "header__logo animate fade-right",
+            attrs: {
+              "data-index": "0",
+              "data-duration": "500",
+              "data-delay": "500"
+            }
+          },
+          [
+            _c("a", { attrs: { href: "/" } }, [
+              _c("img", { attrs: { src: "/images/logo.png", alt: "" } })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "header__link animate fade-down hidden-sm",
+            attrs: {
+              "data-index": "0",
+              "data-duration": "500",
+              "data-delay": "500"
+            }
+          },
+          [
+            _c(
+              "button",
+              {
+                attrs: {
+                  type: "button",
+                  "data-toggle": "modal",
+                  "data-target": "#modalForm"
+                }
+              },
+              [_vm._v("Стать VIP-клиентом")]
+            )
+          ]
+        )
+      ])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-12 col-sm-4 right-row" }, [
-      _c("div", { staticClass: "header__search" }, [
-        _c("form", [
-          _c("input", {
-            attrs: { type: "text", name: "search", placeholder: "Search.." }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "header__lang" }, [_vm._v("EN")])
+    return _c("div", { staticClass: "col-xs-4 col-sm-4" }, [
+      _c("div", { staticClass: "right-block" }, [
+        _c(
+          "div",
+          {
+            staticClass: "header__search animate fade-left",
+            attrs: {
+              "data-index": "0",
+              "data-duration": "500",
+              "data-delay": "500"
+            }
+          },
+          [
+            _c("form", [
+              _c("input", {
+                attrs: {
+                  type: "text",
+                  name: "search",
+                  id: "search",
+                  placeholder: "Поиск"
+                }
+              }),
+              _vm._v(" "),
+              _c("i", [
+                _c("label", { attrs: { for: "search" } }, [
+                  _c("img", {
+                    attrs: { src: "images/search-icon_black.png", alt: "" }
+                  })
+                ])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "header__lang" }, [_vm._v("EN")])
+      ])
     ])
   }
 ]
@@ -52318,7 +52394,7 @@ if (false) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return router; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(14);
 
 
 var routes = [{
@@ -52328,36 +52404,36 @@ var routes = [{
     children: [{
         path: 'home',
         name: 'home',
-        component: __webpack_require__(59)
+        component: __webpack_require__(54)
     }, {
         path: 'news',
         name: 'news',
-        component: __webpack_require__(62)
+        component: __webpack_require__(59)
     }, {
         path: 'cards',
         name: 'cards',
-        component: __webpack_require__(69)
+        component: __webpack_require__(66)
     }, {
         path: 'credits',
         name: 'credits',
-        component: __webpack_require__(71)
+        component: __webpack_require__(68)
     }, {
         path: 'insides',
         name: 'insides',
-        component: __webpack_require__(74)
+        component: __webpack_require__(71)
     }, {
         path: 'suggestions',
         name: 'suggestions',
-        component: __webpack_require__(76)
+        component: __webpack_require__(73)
     }, {
         path: 'service',
         name: 'service',
-        component: __webpack_require__(78)
+        component: __webpack_require__(75)
     }]
 }, {
     path: '*',
     name: 'not_found',
-    component: __webpack_require__(80)
+    component: __webpack_require__(77)
 }];
 
 var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
@@ -52376,7 +52452,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = __webpack_require__(52)
 /* template */
-var __vue_template__ = __webpack_require__(58)
+var __vue_template__ = __webpack_require__(53)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52565,11 +52641,903 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "div",
+      [
+        _c(
+          "transition",
+          {
+            attrs: { name: "page" },
+            on: {
+              "after-enter": _vm.afterPageEnter,
+              "before-enter": _vm.beforePageEnter
+            }
+          },
+          [_c("router-view")],
+          1
+        )
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-74e1d2c0", module.exports)
+  }
+}
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(55)
+/* template */
+var __vue_template__ = __webpack_require__(58)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Pages/Home.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-8205e63e", Component.options)
+  } else {
+    hotAPI.reload("data-v-8205e63e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_dom7_dist_dom7_modular__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ssr_window__ = __webpack_require__(16);
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Swiper__ = __webpack_require__(56);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {};
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        $.scrollify.enable();
+        this.$nextTick(function () {
+            if ($(window).width() > 1200) {
+                _this.setScroll();
+                $(".pagination-scrollify a").off("click");
+                $(".pagination-scrollify a").on("click", $.scrollify.move);
+            }
+            _this.initSliders();
+        });
+    },
+
+    methods: {
+        setScroll: function setScroll() {
+            $.scrollify({
+                section: ".scrollify-section",
+                interstitialSection: ".scrollify-min",
+                overflowScroll: true,
+                standardScrollElement: ".scrollify-standart",
+
+                before: function before(i, panels) {
+                    var ref = panels[i].attr("data-section-name");
+                    $(".pagination-scrollify .active").removeClass("active");
+                    $(".pagination-scrollify").find("a[href=\"#" + ref + "\"]").addClass("active");
+                },
+                afterRender: function afterRender() {
+                    console.log('Render');
+                    var pagination = "<ul class=\"pagination-scrollify\">";
+                    var activeClass = "";
+                    $(".scrollify-section").each(function (i) {
+                        activeClass = "";
+                        if (i === 0) {
+                            activeClass = "active";
+                        }
+                        pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"number\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+                    });
+                    pagination += "</ul>";
+                    $(".home").append(pagination);
+
+                    $(".pagination-scrollify a").on("click", $.scrollify.move);
+                }
+            });
+        },
+        initSliders: function initSliders() {
+
+            //swiper slider 01
+            var mySwiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-header', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                autoplay: {
+                    delay: 5000
+                },
+                effect: 'fade',
+                speed: 1000
+            });
+
+            //swiper slider 02
+            var swiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-products', {
+                slidesPerView: 3,
+                spaceBetween: 70,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                // autoplay: {
+                //     delay: 5000,
+                // },
+                loop: true,
+                speed: 1000,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 15
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 15
+                    },
+                    1200: {
+                        slidesPerView: 3
+                    }
+                }
+            });
+
+            var swiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-partners', {
+                slidesPerView: 4,
+                spaceBetween: 0,
+                loop: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1
+                    },
+                    // 768: {
+                    //     slidesPerView: 2,
+                    // },
+                    1200: {
+                        slidesPerView: 3
+                    }
+                }
+                // autoplay: {
+                //     delay: 5000,
+                // },
+            });
+
+            var swiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-team', {
+                slidesPerView: 4,
+                spaceBetween: 2,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                loop: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1
+                    },
+                    // 768: {
+                    //     slidesPerView: 2,
+                    // },
+                    1200: {
+                        slidesPerView: 3
+                    }
+                },
+                autoplay: {
+                    delay: 5000
+                }
+            });
+
+            var swiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-city', {
+
+                direction: 'vertical',
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+
+                    renderBullet: function renderBullet(index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    }
+                },
+                loop: true,
+                effect: 'fade',
+                speed: 1000,
+                autoplay: {
+                    delay: 5000
+                }
+
+            });
+
+            $(".btn-scroll").off('click');
+            $(".btn-scroll").on('click', function () {
+                var elementClick = $(this).attr("href");
+                var destination = $(elementClick).offset().top;
+                $('html, body').animate({
+                    scrollTop: destination
+                }, 500);
+                return false;
+            });
+        }
+    },
+    destroyed: function destroyed() {
+        $.scrollify.disable();
+    }
+});
+
+/***/ }),
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_dom7_dist_dom7_modular__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ssr_window__ = __webpack_require__(15);
 /**
  * Swiper 4.3.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -59310,7 +60278,7 @@ Swiper.use(components);
 
 
 /***/ }),
-/* 54 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59401,7 +60369,7 @@ Swiper.use(components);
 /* unused harmony export touchmove */
 /* unused harmony export resize */
 /* unused harmony export scroll */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ssr_window__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ssr_window__ = __webpack_require__(15);
 /**
  * Dom7 2.1.0
  * Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API
@@ -60746,2536 +61714,10 @@ function scroll(...args) {
 
 
 /***/ }),
-/* 55 */,
-/* 56 */,
-/* 57 */,
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      [
-        _c(
-          "transition",
-          {
-            attrs: { name: "page" },
-            on: {
-              "after-enter": _vm.afterPageEnter,
-              "before-enter": _vm.beforePageEnter
-            }
-          },
-          [_c("router-view")],
-          1
-        )
-      ],
-      1
-    )
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-74e1d2c0", module.exports)
-  }
-}
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(60)
-/* template */
-var __vue_template__ = __webpack_require__(61)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Pages/Home.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8205e63e", Component.options)
-  } else {
-    hotAPI.reload("data-v-8205e63e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 60 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Swiper__ = __webpack_require__(53);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {};
-    },
-    mounted: function mounted() {
-        var _this = this;
-
-        $.scrollify.enable();
-        this.$nextTick(function () {
-            if ($(window).width() > 1200) {
-                _this.setScroll();
-                $(".pagination-scrollify a").off("click");
-                $(".pagination-scrollify a").on("click", $.scrollify.move);
-            }
-            _this.initSliders();
-        });
-    },
-
-    methods: {
-        setScroll: function setScroll() {
-            $.scrollify({
-                section: ".scrollify-section",
-                interstitialSection: ".scrollify-min",
-                overflowScroll: true,
-                standardScrollElement: ".scrollify-standart",
-
-                before: function before(i, panels) {
-                    var ref = panels[i].attr("data-section-name");
-                    $(".pagination-scrollify .active").removeClass("active");
-                    $(".pagination-scrollify").find("a[href=\"#" + ref + "\"]").addClass("active");
-                },
-                afterRender: function afterRender() {
-                    console.log('Render');
-                    var pagination = "<ul class=\"pagination-scrollify\">";
-                    var activeClass = "";
-                    $(".scrollify-section").each(function (i) {
-                        activeClass = "";
-                        if (i === 0) {
-                            activeClass = "active";
-                        }
-                        pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"number\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
-                    });
-                    pagination += "</ul>";
-                    $(".home").append(pagination);
-
-                    $(".pagination-scrollify a").on("click", $.scrollify.move);
-                }
-            });
-        },
-        initSliders: function initSliders() {
-
-            //swiper slider 01
-            var mySwiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-header', {
-                loop: true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
-                // autoplay: {
-                //     delay: 5000,
-                // },
-                effect: 'fade',
-                speed: 1000
-            });
-
-            //swiper slider 02
-            var swiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-products', {
-                slidesPerView: 3,
-                spaceBetween: 70,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
-                loop: true,
-                speed: 1000,
-                breakpoints: {
-                    768: {
-                        slidesPerView: 1,
-                        spaceBetween: 15
-                    },
-                    992: {
-                        slidesPerView: 2,
-                        spaceBetween: 15
-                    },
-                    1200: {
-                        slidesPerView: 3
-                    }
-                }
-            });
-
-            var swiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-partners', {
-                slidesPerView: 4,
-                spaceBetween: 30,
-                loop: true,
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1
-                    },
-                    768: {
-                        slidesPerView: 2
-                    },
-                    1200: {
-                        slidesPerView: 3
-                    }
-                }
-            });
-
-            var swiper = new __WEBPACK_IMPORTED_MODULE_0_Swiper__["a" /* default */]('.swiper-team', {
-                slidesPerView: 4,
-                spaceBetween: 2,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                loop: true,
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1
-                    },
-                    768: {
-                        slidesPerView: 2
-                    },
-                    1200: {
-                        slidesPerView: 3
-                    }
-                }
-            });
-
-            $(".btn-scroll").off('click');
-            $(".btn-scroll").on('click', function () {
-                var elementClick = $(this).attr("href");
-                var destination = $(elementClick).offset().top;
-                $('html, body').animate({
-                    scrollTop: destination
-                }, 500);
-                return false;
-            });
-        }
-    },
-    destroyed: function destroyed() {
-        $.scrollify.disable();
-    }
-});
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      {
-        staticClass: "scrollify-section",
-        attrs: { "data-section-name": "section-header" }
-      },
-      [
-        _c("div", {
-          class: ["overlay-menu", { active: _vm.state.menu.state }],
-          on: {
-            click: function($event) {
-              _vm.state.menu.state = false
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("section", { staticClass: "header" }, [
-          _c("div", { staticClass: "wrapper" }, [
-            _c("div", { staticClass: "red-block" }),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "header__top" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-xs-3 col-sm-4" }, [
-                  _c("div", { staticClass: "left-block" }, [
-                    _c("div", { staticClass: "header__menu" }, [
-                      _c(
-                        "nav",
-                        {
-                          class: [
-                            "cbp-spmenu cbp-spmenu-left",
-                            { "cbp-spmenu-open": _vm.state.menu.state }
-                          ],
-                          attrs: { id: "cbp-spmenu-s1" }
-                        },
-                        [
-                          _c("img", {
-                            staticClass: "btn-close",
-                            attrs: {
-                              src: "/images/icon_close.png",
-                              id: "closeLeft",
-                              alt: ""
-                            },
-                            on: {
-                              click: function($event) {
-                                _vm.state.menu.state = false
-                              }
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: _vm.Laravel.getLocalizedRoute({
-                                  name: "service"
-                                })
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                            Сервис\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: _vm.Laravel.getLocalizedRoute({
-                                  name: "insides"
-                                })
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                            Вложения\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: _vm.Laravel.getLocalizedRoute({
-                                  name: "cards"
-                                })
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                            Карты\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: _vm.Laravel.getLocalizedRoute({
-                                  name: "credits"
-                                })
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                            Кредитные продукты\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: _vm.Laravel.getLocalizedRoute({
-                                  name: "news"
-                                })
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                            Новости\n                                        "
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "menu-button",
-                          attrs: { id: "showLeft" },
-                          on: {
-                            click: function($event) {
-                              _vm.state.menu.state = !_vm.state.menu.state
-                            }
-                          }
-                        },
-                        [
-                          _c("span"),
-                          _vm._v(" "),
-                          _c("span"),
-                          _vm._v(" "),
-                          _c("span")
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1)
-                  ])
-                ]),
-                _vm._v(" "),
-                _vm._m(2),
-                _vm._v(" "),
-                _vm._m(3)
-              ])
-            ]),
-            _vm._v(" "),
-            _vm._m(4)
-          ])
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(5),
-    _vm._v(" "),
-    _vm._m(6),
-    _vm._v(" "),
-    _vm._m(7),
-    _vm._v(" "),
-    _vm._m(8),
-    _vm._v(" "),
-    _vm._m(9),
-    _vm._v(" "),
-    _vm._m(10),
-    _vm._v(" "),
-    _vm._m(11)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "line-el animate fade-right",
-        attrs: {
-          "data-index": "0",
-          "data-duration": "500",
-          "data-delay": "600"
-        }
-      },
-      [_c("img", { attrs: { src: "/images/line.png", alt: "" } })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "header__link animate fade-right hidden-sm",
-        attrs: {
-          "data-index": "0",
-          "data-duration": "500",
-          "data-delay": "500"
-        }
-      },
-      [
-        _c("a", { staticClass: "btn-scroll", attrs: { href: "#scroll-01" } }, [
-          _vm._v("Персональный менеджер")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-6 col-sm-4" }, [
-      _c(
-        "div",
-        {
-          staticClass: "header__logo animate fade-down",
-          attrs: {
-            "data-index": "0",
-            "data-duration": "500",
-            "data-delay": "500"
-          }
-        },
-        [
-          _c("a", { attrs: { href: "/" } }, [
-            _c("img", { attrs: { src: "/images/logo.png", alt: "" } })
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-3 col-sm-4" }, [
-      _c("div", { staticClass: "right-block" }, [
-        _c(
-          "div",
-          {
-            staticClass: "header__search animate fade-left",
-            attrs: {
-              "data-index": "0",
-              "data-duration": "500",
-              "data-delay": "500"
-            }
-          },
-          [
-            _c("form", [
-              _c("input", {
-                attrs: {
-                  type: "text",
-                  name: "search",
-                  id: "search",
-                  placeholder: "Search.."
-                }
-              }),
-              _vm._v(" "),
-              _c("i", [
-                _c("label", { attrs: { for: "search" } }, [
-                  _c("img", {
-                    attrs: { src: "images/search-icon.png", alt: "" }
-                  })
-                ])
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "header__lang" }, [_vm._v("EN")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header__bottom" }, [
-      _c("div", { staticClass: "swiper-container swiper-header" }, [
-        _c("div", { staticClass: "swiper-wrapper" }, [
-          _c(
-            "div",
-            {
-              staticClass: "swiper-slide",
-              staticStyle: {
-                "background-image": "url('/images/slide_img_01.jpg')"
-              }
-            },
-            [
-              _c("div", { staticClass: "title" }, [
-                _c(
-                  "pre",
-                  {
-                    staticClass: "animate short-fade-up",
-                    attrs: {
-                      "data-index": "0",
-                      "data-duration": "500",
-                      "data-delay": "600"
-                    }
-                  },
-                  [_vm._v("Сбербанк"), _c("br"), _vm._v("первый      _")]
-                ),
-                _vm._v(" "),
-                _c("img", { attrs: { src: "/images/first.png", alt: "" } })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "swiper-slide",
-              staticStyle: {
-                "background-image": "url('/images/slide_img_01.jpg')"
-              }
-            },
-            [
-              _c("div", { staticClass: "title" }, [
-                _c("pre", [
-                  _vm._v("Сбербанк"),
-                  _c("br"),
-                  _vm._v("первый      _")
-                ]),
-                _vm._v(" "),
-                _c("img", { attrs: { src: "/images/first.png", alt: "" } })
-              ])
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "arrow-block" }, [
-        _c("div", {
-          staticClass: "swiper-button-prev animate short-fade-right",
-          attrs: {
-            "data-index": "0",
-            "data-duration": "500",
-            "data-delay": "500"
-          }
-        }),
-        _vm._v(" "),
-        _c("div", {
-          staticClass: "swiper-button-next animate short-fade-left",
-          attrs: {
-            "data-index": "0",
-            "data-duration": "500",
-            "data-delay": "500"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "btn-video animate short-fade-up",
-          attrs: {
-            "data-index": "0",
-            "data-duration": "500",
-            "data-delay": "700",
-            href: "#"
-          }
-        },
-        [_vm._v("смотреть\n                        видео")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "scrollify-section",
-        attrs: { "data-section-name": "section-about" }
-      },
-      [
-        _c("section", { staticClass: "about" }, [
-          _c("div", { staticClass: "wrapper" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "col-xs-12 col-sm-6 animate fade-right",
-                  attrs: {
-                    "data-index": "1",
-                    "data-duration": "500",
-                    "data-delay": "500"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: { src: "/images/about_img_01.jpg", alt: "" }
-                    })
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-xs-12 col-sm-6 animate fade-left",
-                  attrs: {
-                    "data-index": "1",
-                    "data-duration": "500",
-                    "data-delay": "500"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "text-block" }, [
-                    _c("div", { staticClass: "suptitle" }, [
-                      _vm._v(
-                        "Персональное обслуживание и индивидуальный подход"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "line-white" }),
-                    _vm._v(" "),
-                    _c("h2", [_vm._v("О нас")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "subtitle" }, [
-                      _vm._v(
-                        "\n                                Сбербанк – крупнейший банк России, Центральной и Восточной Европы – со 175-летней историей.\n                            "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "text" }, [
-                      _vm._v(
-                        "\n                                Мы даем людям уверенность и надежность, мы делаем их жизнь лучше, помогая реализовывать устремления и мечты.\n                                "
-                      ),
-                      _c("br"),
-                      _vm._v(
-                        "\n                                Наши ценности — основа отношения к жизни и работе, внутренний компас, помогающий принимать решения в сложных ситуациях, принципы, верность которым мы храним всегда и везде.\n                                "
-                      ),
-                      _c("br"),
-                      _vm._v(
-                        "\n                                История Дочернего Банка Акционерного Общества «Сбербанк России» в Казахстане начинается в конце 2006 г., когда Сбербанк России, флагман российской финансовой системы, крупнейший финансовый институт Центральной и Восточной Европы, приобретает 99,99% акций ТексакаБанка, признанного банком с лучшим уровнем клиентского обслуживания по версии журнала National Business.\n                            "
-                      )
-                    ])
-                  ])
-                ]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "scrollify-section",
-        attrs: { "data-section-name": "section-advantage" }
-      },
-      [
-        _c("section", { staticClass: "advantage" }, [
-          _c("div", { staticClass: "wrapper" }, [
-            _c("div", { staticClass: "inner" }, [
-              _c(
-                "h2",
-                {
-                  staticClass: "animate fade",
-                  attrs: {
-                    "data-index": "2",
-                    "data-duration": "500",
-                    "data-delay": "700"
-                  }
-                },
-                [_vm._v("Сбербанк Первый")]
-              ),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "line-red animate short-fade-up",
-                attrs: {
-                  "data-index": "2",
-                  "data-duration": "500",
-                  "data-delay": "500"
-                }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "row flex-block" }, [
-                _c("div", { staticClass: "col-xs-12 col-sm-5" }, [
-                  _c("div", { staticClass: "row adv-el" }, [
-                    _c("div", { staticClass: "col-xs-3" }, [
-                      _c("div", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: { src: "/images/adv_icon_01.png", alt: "" }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-xs-9" }, [
-                      _c("div", { staticClass: "title" }, [
-                        _vm._v("Индивидуальные финансовые и страховые услуги")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "description" }, [
-                        _vm._v(
-                          "Сбербанк Первый представляет программу розничного кредитования\n                                        и страхования по индивидуальным, выгодным и удобным условиями\n                                    "
-                        )
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "row adv-el animate fade-bottomleft",
-                      attrs: {
-                        "data-index": "2",
-                        "data-duration": "500",
-                        "data-delay": "700"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "col-xs-3" }, [
-                        _c("div", { staticClass: "image" }, [
-                          _c("img", {
-                            attrs: { src: "/images/adv_icon_02.png", alt: "" }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-xs-9" }, [
-                        _c("div", { staticClass: "title" }, [
-                          _vm._v("Безопасность и конфиденциальность")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "description" }, [
-                          _vm._v(
-                            "Специализированные офисы и зоны обслуживания закрытого типа\n                                        предназначены исключительно для клиентов Сбербанк Первый.\n                                    "
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-xs-12 col-sm-7" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "row adv-el adv-el-red",
-                      attrs: {
-                        "data-index": "2",
-                        "data-duration": "500",
-                        "data-delay": "700"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "col-xs-3" }, [
-                        _c("div", { staticClass: "image" }, [
-                          _c("img", {
-                            attrs: { src: "/images/adv_icon_03.png", alt: "" }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-xs-9" }, [
-                        _c("div", { staticClass: "title" }, [
-                          _vm._v(
-                            "Персональное обслуживание и индивидуальный подход"
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "description" }, [
-                          _vm._v(
-                            "Персональный менеджер станет доверенным лицом для Вас и Вашей\n                                        семьи при решении любых финансовых задач. Высококлассные специалисты\n                                        проконсультируют Вас по любому вопросу, связанному с управлением капиталом и\n                                        инвестициями, предложат сервисы и услуги в соответствии с Вашими потребностями и\n                                        помогут сформировать Ваш индивидуальный финансовый портфель.\n                                    "
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "scrollify-section",
-        attrs: { "data-section-name": "section-products" }
-      },
-      [
-        _c("div", { staticClass: "scrollify-standart" }, [
-          _c("section", { staticClass: "products row" }, [
-            _c("div", { staticClass: "wrapper" }, [
-              _c("div", { staticClass: "wrap-title" }, [
-                _c(
-                  "h2",
-                  {
-                    staticClass: "animate fade",
-                    attrs: {
-                      "data-index": "3",
-                      "data-duration": "500",
-                      "data-delay": "700"
-                    }
-                  },
-                  [_vm._v("Продукты и услуги")]
-                ),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "line-red animate short-fade-up",
-                  attrs: {
-                    "data-index": "3",
-                    "data-duration": "500",
-                    "data-delay": "500"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "slider-block" }, [
-                _c("div", { staticClass: "swiper-container swiper-products" }, [
-                  _c("div", { staticClass: "swiper-wrapper" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "swiper-slide animate fade-up",
-                        attrs: {
-                          "data-index": "3",
-                          "data-duration": "600",
-                          "data-delay": "700"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "wrap" }, [
-                          _c("div", { staticClass: "slide-inner" }, [
-                            _c("div", { staticClass: "suptitle" }, [
-                              _c("span", [
-                                _vm._v(
-                                  "В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:"
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "image" }, [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/prod_img_01.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "title" }, [
-                              _vm._v("Карты")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "subtitle" }, [
-                              _vm._v("Премиальные карты")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "description" }, [
-                              _vm._v(
-                                "Платежные карточки подобно дорогостоящим аксессуарам\n                                                являются атрибутом, подчеркивающим Ваш статус.\n                                            "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "btn-white",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("Подробнее")]
-                            )
-                          ])
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "swiper-slide animate fade",
-                        attrs: {
-                          "data-index": "3",
-                          "data-duration": "600",
-                          "data-delay": "700"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "wrap" }, [
-                          _c("div", { staticClass: "slide-inner" }, [
-                            _c("div", { staticClass: "suptitle" }, [
-                              _c("span", [
-                                _vm._v(
-                                  "В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:"
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "image" }, [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/prod_img_02.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "title" }, [
-                              _vm._v("Вложения")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "subtitle" }, [
-                              _vm._v("Премиальные вклады")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "description" }, [
-                              _vm._v(
-                                "Сбербанк Первый предлагает линейку премиальных вкладов,\n                                                главными преимуществами которых являются высокая надежность и гибкость условий.\n                                            "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "btn-white",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("Подробнее")]
-                            )
-                          ])
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "swiper-slide animate fade-down",
-                        attrs: {
-                          "data-index": "3",
-                          "data-duration": "600",
-                          "data-delay": "700"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "wrap" }, [
-                          _c("div", { staticClass: "slide-inner" }, [
-                            _c("div", { staticClass: "suptitle" }, [
-                              _c("span", [
-                                _vm._v(
-                                  "В офисах Сбербанк Первый Вы можете воспользоваться полным спектром премиальных банковских услуг, в том числе:"
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "image" }, [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/prod_img_03.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "title" }, [
-                              _vm._v("Финансирование")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "subtitle" }, [
-                              _vm._v("Кредитные продукты")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "description" }, [
-                              _vm._v(
-                                "Доверие и понимание Ваших потребностей – наши главные\n                                                приоритеты. Кредит – это возможность выгодно и быстро реализовать важные планы.\n                                            "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "btn-white",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("Подробнее")]
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "arrow-block" }, [
-                    _c("div", {
-                      staticClass: "swiper-button-prev animate fade-right",
-                      attrs: {
-                        "data-duration": "600",
-                        "data-delay": "500",
-                        "data-index": "3"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", {
-                      staticClass: "swiper-button-next animate fade-left",
-                      attrs: {
-                        "data-duration": "600",
-                        "data-delay": "500",
-                        "data-index": "3"
-                      }
-                    })
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("section", { staticClass: "partners" }, [
-            _c("div", { staticClass: "wrapper" }, [
-              _c("div", { staticClass: "swiper-container swiper-partners" }, [
-                _c("div", { staticClass: "swiper-wrapper" }, [
-                  _c("div", { staticClass: "swiper-slide" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "image animate fade",
-                        attrs: {
-                          "data-duration": "500",
-                          "data-index": "3",
-                          "data-delay": "500"
-                        }
-                      },
-                      [
-                        _c("img", {
-                          attrs: { src: "/images/icon_rixos.jpg", alt: "" }
-                        })
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "swiper-slide" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "image animate fade",
-                        attrs: {
-                          "data-duration": "500",
-                          "data-index": "3",
-                          "data-delay": "600"
-                        }
-                      },
-                      [
-                        _c("img", {
-                          attrs: { src: "/images/icon_mont_blank.jpg", alt: "" }
-                        })
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "swiper-slide" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "image animate fade",
-                        attrs: {
-                          "data-duration": "500",
-                          "data-index": "3",
-                          "data-delay": "700"
-                        }
-                      },
-                      [
-                        _c("img", {
-                          attrs: { src: "/images/icon_luxor.jpg", alt: "" }
-                        })
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "swiper-slide" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "image animate fade",
-                        attrs: {
-                          "data-duration": "500",
-                          "data-index": "3",
-                          "data-delay": "800"
-                        }
-                      },
-                      [
-                        _c("img", {
-                          attrs: { src: "/images/icon_dunhill.jpg", alt: "" }
-                        })
-                      ]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "scrollify-section",
-        attrs: { "data-section-name": "section-team" }
-      },
-      [
-        _c("section", { staticClass: "team" }, [
-          _c("div", { staticClass: "wrapper" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-xs-12 col-sm-6" }, [
-                _c(
-                  "h2",
-                  {
-                    staticClass: "animate fade",
-                    attrs: {
-                      "data-index": "4",
-                      "data-duration": "500",
-                      "data-delay": "700"
-                    }
-                  },
-                  [_vm._v("Наша команда")]
-                ),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "line-red animate short-fade-up",
-                  attrs: {
-                    "data-index": "4",
-                    "data-duration": "500",
-                    "data-delay": "500"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-xs-12 col-sm-6 animate fade-left",
-                  attrs: {
-                    "data-index": "4",
-                    "data-duration": "500",
-                    "data-delay": "700"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "desc-block" }, [
-                    _c("p", [
-                      _vm._v(
-                        "Банк, работой в котором можно гордиться, который уважают, сотрудники которого уверены в своем\n                                будущем"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { staticClass: "btn-more", attrs: { href: "#" } }, [
-                      _vm._v("Просмотреть всех")
-                    ])
-                  ])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "slider-block" }, [
-              _c("div", { staticClass: "swiper-container swiper-team" }, [
-                _c("div", { staticClass: "swiper-wrapper" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "500"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/001-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Есбосынова Гулия\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Директор Управления Сбербанк Первый\n                                            (Сбербанк Первый Алматы)\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "500"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/002-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Аусенова Динара\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Руководитель направления Управления Сбербанк Первый\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "600"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/003-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Асауова Гульмира\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Начальник отдела обслуживания VIP персон\n                                            (Сбербанк Первый Алматы)\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "700"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/004-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Пак Маргарита\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Начальник отдела обслуживания VIP персон\n                                            (Сбербанк Первый Астана)\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "800"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/005-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Альбергенов Чингиз\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Ведущий менеджер по обслуживанию VIP персон\n                                            (Сбербанк Первый Алматы)\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "800"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/006-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Абеуова Гульзада\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Ведущий менеджер по обслуживанию VIP персон\n                                            (Сбербанк Первый Алматы)\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "800"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/007-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Муканова Айжан\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Заместитель Начальника Отдела обслуживания VIP персон\n                                            (Сбербанк Первый Астана)\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "swiper-slide animate fade",
-                      attrs: {
-                        "data-duration": "500",
-                        "data-index": "4",
-                        "data-delay": "800"
-                      }
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "image",
-                          staticStyle: {
-                            background: "url('/images/team/008-1000.jpg')"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "image__description" }, [
-                            _c("p", { staticClass: "image__title" }, [
-                              _vm._v(
-                                "\n                                            Есенбек Санжар\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "image__text" }, [
-                              _vm._v(
-                                "\n                                            Ведущий кредитный менеджер по обслуживанию VIP персон\n                                            (Сбербанк Первый Алматы)\n                                        "
-                              )
-                            ])
-                          ])
-                        ]
-                      )
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "swiper-pagination" })
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "scrollify-section",
-        attrs: { "data-section-name": "section-contacts" }
-      },
-      [
-        _c("section", { staticClass: "contacts", attrs: { id: "scroll-01" } }, [
-          _c("div", { staticClass: "red-block" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "wrapper" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-xs-12 col-sm-6" }, [
-                _c("div", { staticClass: "left-block" }, [
-                  _c("div", { staticClass: "inner" }, [
-                    _c(
-                      "h3",
-                      {
-                        staticClass: "animate fade",
-                        attrs: {
-                          "data-index": "5",
-                          "data-duration": "500",
-                          "data-delay": "700"
-                        }
-                      },
-                      [_vm._v("Контакты")]
-                    ),
-                    _vm._v(" "),
-                    _c("div", {
-                      staticClass: "white-line animate short-fade-up",
-                      attrs: {
-                        "data-index": "5",
-                        "data-duration": "500",
-                        "data-delay": "500"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "subtitle" }, [
-                      _vm._v("Форма обратной "),
-                      _c("br"),
-                      _vm._v("связи")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn-maps",
-                        attrs: {
-                          type: "button",
-                          "data-toggle": "modal",
-                          "data-target": "#modalMaps"
-                        }
-                      },
-                      [_vm._v("Карта")]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-xs-12 col-sm-6" }, [
-                _c("div", { staticClass: "right-block" }, [
-                  _c("div", { staticClass: "inner" }, [
-                    _c("div", { staticClass: "title" }, [
-                      _vm._v(
-                        "\n                                    Назначьте встречу с "
-                      ),
-                      _c("br"),
-                      _vm._v(
-                        "персональным менеджером\n                                "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "cont-el col-xs-12 col-sm-12" },
-                        [
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", { staticClass: "image col-xs-2" }, [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/contacts_icon01.png",
-                                  alt: ""
-                                }
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-xs-10" }, [
-                              _c("div", { staticClass: "text" }, [
-                                _vm._v(
-                                  "\n                                                    г. Алматы:"
-                                ),
-                                _c("br"),
-                                _vm._v(
-                                  "\n                                                    Казахстан, Алматы, пр.Достык, д. 97."
-                                ),
-                                _c("br"),
-                                _vm._v(
-                                  "\n                                                    Телефоны: +7 (727) 259 77 87, +7 (727) 259 77 97г. Астана:"
-                                ),
-                                _c("br"),
-                                _vm._v(" "),
-                                _c("br"),
-                                _c("br"),
-                                _vm._v(
-                                  "\n                                                    Казахстан, Астана, пр. Туран 37/9, ЖК «RixosKhanShatyrResidences», Блок Б"
-                                ),
-                                _c("br"),
-                                _vm._v(
-                                  "\n                                                    Телефоны: +7 (7172) 43 35 74, +7 (7172) 43 35 75, +7 (7172) 43 35 76\n                                                "
-                                )
-                              ])
-                            ])
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cont-el col-xs-12 col-sm-6" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "image col-xs-2" }, [
-                            _c("img", {
-                              attrs: {
-                                src: "/images/contacts_icon02.png",
-                                alt: ""
-                              }
-                            })
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-xs-10" }, [
-                            _c("div", { staticClass: "text" }, [
-                              _vm._v(
-                                "\n                                                    по телефонам:"
-                              ),
-                              _c("br"),
-                              _c("br"),
-                              _vm._v(
-                                "\n                                                    г. Алматы"
-                              ),
-                              _c("br"),
-                              _vm._v(
-                                "\n                                                    +7 (727) 259 77 87"
-                              ),
-                              _c("br"),
-                              _vm._v(
-                                "\n                                                    +7 (727) 259 77 97"
-                              ),
-                              _c("br"),
-                              _c("br"),
-                              _vm._v(
-                                "\n                                                    г. Астана"
-                              ),
-                              _c("br"),
-                              _vm._v(
-                                "\n                                                    +7 (7172) 43 35 74"
-                              ),
-                              _c("br"),
-                              _vm._v(
-                                "\n                                                    +7 (7172) 43 35 75"
-                              ),
-                              _c("br"),
-                              _vm._v(
-                                "\n                                                    +7 (7172) 43 35 76\n                                                "
-                              )
-                            ])
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "cont-el col-xs-12 col-sm-6" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "image col-xs-2" }, [
-                            _c("img", {
-                              attrs: {
-                                src: "/images/contacts_icon03.png",
-                                alt: ""
-                              }
-                            })
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-xs-10" }, [
-                            _c("div", { staticClass: "text" }, [
-                              _vm._v("VIP@SBERBANK.KZ")
-                            ])
-                          ])
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn-feedback",
-                        attrs: {
-                          type: "button",
-                          "data-toggle": "modal",
-                          "data-target": "#modalForm"
-                        }
-                      },
-                      [_vm._v("Форма обратной связи")]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pagination-scrollify" }, [
-      _c(
-        "li",
-        {
-          staticClass: "animate fade-left",
-          attrs: {
-            "data-index": "all",
-            "data-duration": "500",
-            "data-delay": "500"
-          }
-        },
-        [
-          _c(
-            "a",
-            { staticClass: "active", attrs: { href: "#section-header" } },
-            [_c("span", { staticClass: "number" }, [_vm._v("01")])]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass: "animate fade-left",
-          attrs: {
-            "data-index": "all",
-            "data-duration": "500",
-            "data-delay": "600"
-          }
-        },
-        [
-          _c("a", { attrs: { href: "#section-about" } }, [
-            _c("span", { staticClass: "number" }, [_vm._v("02")])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass: "animate fade-left",
-          attrs: {
-            "data-index": "all",
-            "data-duration": "500",
-            "data-delay": "700"
-          }
-        },
-        [
-          _c("a", { attrs: { href: "#section-advantage" } }, [
-            _c("span", { staticClass: "number" }, [_vm._v("03")])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass: "animate fade-left",
-          attrs: {
-            "data-index": "all",
-            "data-duration": "500",
-            "data-delay": "800"
-          }
-        },
-        [
-          _c("a", { attrs: { href: "#section-products" } }, [
-            _c("span", { staticClass: "number" }, [_vm._v("04")])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass: "animate fade-left",
-          attrs: {
-            "data-index": "all",
-            "data-duration": "500",
-            "data-delay": "900"
-          }
-        },
-        [
-          _c("a", { attrs: { href: "#section-team" } }, [
-            _c("span", { staticClass: "number" }, [_vm._v("05")])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass: "animate fade-left",
-          attrs: {
-            "data-index": "all",
-            "data-duration": "500",
-            "data-delay": "1000"
-          }
-        },
-        [
-          _c("a", { attrs: { href: "#section-contacts" } }, [
-            _c("span", { staticClass: "number" }, [_vm._v("06")])
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "modal fade", attrs: { id: "modalMaps", role: "dialog" } },
-      [
-        _c("div", { staticClass: "modal-dialog modal-maps" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-header" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "close",
-                  attrs: { type: "button", "data-dismiss": "modal" }
-                },
-                [_vm._v("×")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "carousel slide",
-                  attrs: {
-                    id: "myCarousel",
-                    "data-ride": "carousel",
-                    "data-interval": "false"
-                  }
-                },
-                [
-                  _c("ol", { staticClass: "carousel-indicators" }, [
-                    _c(
-                      "li",
-                      {
-                        staticClass: "active",
-                        attrs: {
-                          "data-target": "#myCarousel",
-                          "data-slide-to": "0"
-                        }
-                      },
-                      [_vm._v("Алматы")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        attrs: {
-                          "data-target": "#myCarousel",
-                          "data-slide-to": "1"
-                        }
-                      },
-                      [_vm._v("Астана")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "carousel-inner" }, [
-                    _c("div", { staticClass: "item active" }, [
-                      _c("div", { staticClass: "maps-title" }, [
-                        _vm._v(
-                          "\n                                    г. Алматы: "
-                        ),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                    Казахстан, Алматы, пр.Достык, д. 97."
-                        ),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                    Телефоны: +7 (727) 259 77 87, +7 (727) 259 77 97г. Астана:\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "maps-block" })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "item" }, [
-                      _c("div", { staticClass: "maps-title" }, [
-                        _vm._v(
-                          "\n                                    г. Астана: "
-                        ),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                    Казахстан, Астана, пр. Туран 37/9, ЖК «RixosKhanShatyrResidences», Блок Б"
-                        ),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                    Телефоны: +7 (7172) 43 35 74, +7 (7172) 43 35 75, +7 (7172) 43 35 76\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "maps-block" })
-                    ])
-                  ])
-                ]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
+module.exports={render:function(){},staticRenderFns:[]}
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
@@ -63284,19 +61726,19 @@ if (false) {
 }
 
 /***/ }),
-/* 62 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(63)
+  __webpack_require__(60)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(68)
+var __vue_template__ = __webpack_require__(65)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -63335,17 +61777,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 63 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(64);
+var content = __webpack_require__(61);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(66)("25eba1e4", content, false, {});
+var update = __webpack_require__(63)("25eba1e4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -63361,10 +61803,10 @@ if(false) {
 }
 
 /***/ }),
-/* 64 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(65)(false);
+exports = module.exports = __webpack_require__(62)(false);
 // imports
 
 
@@ -63375,7 +61817,7 @@ exports.push([module.i, "\nheader {\n    background: url(/images/red_mosaic.jpg)
 
 
 /***/ }),
-/* 65 */
+/* 62 */
 /***/ (function(module, exports) {
 
 /*
@@ -63457,7 +61899,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 66 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -63476,7 +61918,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(67)
+var listToStyles = __webpack_require__(64)
 
 /*
 type StyleObject = {
@@ -63685,7 +62127,7 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-/* 67 */
+/* 64 */
 /***/ (function(module, exports) {
 
 /**
@@ -63718,7 +62160,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 68 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -63907,7 +62349,7 @@ if (false) {
 }
 
 /***/ }),
-/* 69 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -63915,7 +62357,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(70)
+var __vue_template__ = __webpack_require__(67)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -63954,7 +62396,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 70 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -64153,15 +62595,15 @@ if (false) {
 }
 
 /***/ }),
-/* 71 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(72)
+var __vue_script__ = __webpack_require__(69)
 /* template */
-var __vue_template__ = __webpack_require__(73)
+var __vue_template__ = __webpack_require__(70)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -64200,7 +62642,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 72 */
+/* 69 */
 /***/ (function(module, exports) {
 
 //
@@ -64324,7 +62766,7 @@ module.exports = Component.exports
 //
 
 /***/ }),
-/* 73 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -64593,7 +63035,7 @@ if (false) {
 }
 
 /***/ }),
-/* 74 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -64601,7 +63043,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(75)
+var __vue_template__ = __webpack_require__(72)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -64640,7 +63082,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 75 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function(){},staticRenderFns:[]}
@@ -64652,7 +63094,7 @@ if (false) {
 }
 
 /***/ }),
-/* 76 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -64660,7 +63102,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(77)
+var __vue_template__ = __webpack_require__(74)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -64699,7 +63141,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 77 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -65005,7 +63447,7 @@ if (false) {
 }
 
 /***/ }),
-/* 78 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -65013,7 +63455,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(79)
+var __vue_template__ = __webpack_require__(76)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -65052,7 +63494,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 79 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -65448,7 +63890,7 @@ if (false) {
 }
 
 /***/ }),
-/* 80 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -65456,7 +63898,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(81)
+var __vue_template__ = __webpack_require__(78)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -65495,7 +63937,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 81 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -65544,12 +63986,12 @@ if (false) {
 }
 
 /***/ }),
-/* 82 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return store; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(5);
 
@@ -65580,7 +64022,7 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 });
 
 /***/ }),
-/* 83 */
+/* 80 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
