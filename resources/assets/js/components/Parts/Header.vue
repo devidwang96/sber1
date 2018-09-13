@@ -13,6 +13,7 @@
                                     Сервис
                                 </router-link>
 
+
                                 <router-link :to="Laravel.getLocalizedRoute({name : 'insides'})">
                                     Вложения
                                 </router-link>
